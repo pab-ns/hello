@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://pab-ns.github.io/pabsneyra/img/favicon.ico"
+    />
+
+    <meta
+      name="keywords"
+      content="storytelling, content, lab, contenido, laboratorio, digital, multimedia, journalism, periodismo, engagement, hub, creative, media, chile, scl, photography, photo, data, data-viz, d3, visual, video, web, story"
+    />
+    <meta name="author" content="Pablo" />
+    <meta name="description" content="Hi, I'm Pabs. Visual storyteller" />
+    <meta property="og:title" content="Pabs Neyra" />
+    <meta
+      property="og:image"
+      content="https://pab-ns.github.io/pabsneyra/img/untitled-1.jpg"
+    />
+    <meta property="og:url" content="https://pab-ns.github.io/pabsneyra/" />
+    <meta name="twitter:card" content="summary" />
+    <meta property="og:site_name" content="Pabs Neyra" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+      integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+      crossorigin="anonymous"
+    />
+
+    <!-- Theme CSS -->
+    <link rel="stylesheet" href="css/theme.css" />
+
+    <!-- Index Styles -->
+    <link rel="stylesheet" href="css/work.css" />
+
+    <title>Work — Pabs Neyra</title>
+  </head>
+
+  <body>
+    <section class="container my-5">
+      <h1 class="display-4 title">Pabs Neyra</h1>
+    </section>
+
+    <div class="container">
+      <nav>
+        <ul class="list-inline light small text-uppercase" id="myBtnContainer">
+          <li class="list-inline-item filter_btn">
+            <span><a class="a-index" href="/">Home</a></span>
+          </li>
+          <li class="list-inline-item filter_btn">
+            <span><a class="a-index" href="/about.html">About</a></span>
+          </li>
+
+          <li class="list-inline-item filter_btn current-red">
+            <span><a class="a-index" href="/work.html">Work</a></span>
+          </li>
+          <li class="list-inline-item filter_btn">
+            <span
+              ><a
+                class="a-index"
+                href="https://www.linkedin.com/in/pabsneyra/"
+                target="_blank"
+                >LinkedIn</a
+              ></span
+            >
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <main class="flex-container container">
+      <div class="main-content">
+        <nav>
+          <span class="small text-uppercase bold pl-2">Other Projects: </span>
+          <ul
+            class="list-inline light small text-uppercase"
+            id="myBtnContainer"
+          >
+            <li class="list-inline-item bold"></li>
+            <li
+              class="list-inline-item filter_btn current"
+              onclick="filterSelection('all')"
+            >
+              <span>All</span>
+            </li>
+            <li
+              class="list-inline-item filter_btn"
+              onclick="filterSelection('code')"
+            >
+              <span>Design + Code</span>
+            </li>
+            <li
+              class="list-inline-item filter_btn"
+              onclick="filterSelection('app')"
+            >
+              <span>App. Design</span>
+            </li>
+            <li
+              class="list-inline-item filter_btn"
+              onclick="filterSelection('web')"
+            >
+              <span>Web Design</span>
+            </li>
+          </ul>
+        </nav>
+        <hr />
+
+        <div class="services">
+          <!-- code - 100pandemia -->
+          <div class="card service column code">
+            <a
+              href="https://pab-ns.github.io/sclab.co/100-pandemia"
+              target="_blank"
+            >
+              <img
+                class="card-img-top rounded-0"
+                src="https://pab-ns.github.io/sclab.co/assets/img/thumbnails/525/2020-07-100-pandemia.jpg"
+                alt="Card image cap"
+              />
+
+              <div class="card-body">
+                <small class="d-block card-tag bold">SCLab.</small>
+                <span class="p card-title light">100 días de pandemia</span>
+              </div>
+            </a>
+          </div>
+
+          <!-- code - 50 -->
+          <div class="card service column code">
+            <a
+              href="https://pab-ns.github.io/sclab.co/50-dias-estallido"
+              target="_blank"
+            >
+              <img
+                class="card-img-top rounded-0"
+                src="https://pab-ns.github.io/sclab.co/assets/img/thumbnails/525/2020-10-50dias.jpg"
+                alt="Card image cap"
+              />
+
+              <div class="card-body">
+                <small class="d-block card-tag bold">SCLab.</small>
+                <span class="p card-title light">50 días del estallido</span>
+              </div>
+            </a>
+          </div>
+
+          <!-- code - 8m -->
+          <div class="card service column code">
+            <a
+              href="https://pab-ns.github.io/sclab.co/mujeres-metro"
+              target="_blank"
+            >
+              <img
+                class="card-img-top rounded-0"
+                src="https://pab-ns.github.io/sclab.co/assets/img/thumbnails/525/2019-03-8m.jpg"
+                alt="Card image cap"
+              />
+
+              <div class="card-body">
+                <small class="d-block card-tag bold">SCLab.</small>
+                <span class="p card-title light"
+                  >Las mujeres del Metro de Santiago</span
+                >
+              </div>
+            </a>
+          </div>
+
+          <!-- code - mas -->
+          <div class="card service column code">
+            <a
+              href="https://pab-ns.github.io/sclab.co/mas-trabajo"
+              target="_blank"
+            >
+              <img
+                class="card-img-top rounded-0"
+                src="https://pab-ns.github.io/sclab.co/assets/img/thumbnails/525/2019-06-trabajo.jpg"
+                alt="Card image cap"
+              />
+
+              <div class="card-body">
+                <small class="d-block card-tag bold">SCLab.</small>
+                <span class="p card-title light">Más que un Trabajo</span>
+              </div>
+            </a>
+          </div>
+
+          <!-- code - mas -->
+          <div class="card service column code">
+            <a href="https://pab-ns.github.io/sclab.co/dt-cc" target="_blank">
+              <img
+                class="card-img-top rounded-0"
+                src="https://pab-ns.github.io/sclab.co/assets/img/thumbnails/525/2018-12-dt.jpg"
+                alt="Card image cap"
+              />
+
+              <div class="card-body">
+                <small class="d-block card-tag bold">SCLab.</small>
+                <span class="p card-title light">Mejor DT de Colo-Colo</span>
+              </div>
+            </a>
+          </div>
+
+          <!-- code - nuevo -->
+          <div class="card service column code">
+            <a
+              href="https://pab-ns.github.io/sclab.co/nuevo-chile"
+              target="_blank"
+            >
+              <img
+                class="card-img-top rounded-0"
+                src="https://pab-ns.github.io/sclab.co/assets/img/thumbnails/525/2018-09-nuevo-chile.jpg"
+                alt="Card image cap"
+              />
+
+              <div class="card-body">
+                <small class="d-block card-tag bold">SCLab.</small>
+                <span class="p card-title light">El Nuevo Chile</span>
+              </div>
+            </a>
+          </div>
+
+          <!-- code - stgo -->
+          <div class="card service column code">
+            <a
+              href="https://pab-ns.github.io/sclab.co/stgo-centro"
+              target="_blank"
+            >
+              <img
+                class="card-img-top rounded-0"
+                src="https://pab-ns.github.io/sclab.co/assets/img/thumbnails/525/2018-06-stgo-centro.jpg"
+                alt="Card image cap"
+              />
+
+              <div class="card-body">
+                <small class="d-block card-tag bold">SCLab.</small>
+                <span class="p card-title light"
+                  >Stgo Centro en 11 estaciones</span
+                >
+              </div>
+            </a>
+          </div>
+
+          <!-- code - stgo -->
+          <div class="card service column code">
+            <a
+              href="https://pab-ns.github.io/sclab.co/jamiroquai-festival"
+              target="_blank"
+            >
+              <img
+                class="card-img-top rounded-0"
+                src="https://pab-ns.github.io/sclab.co/assets/img/thumbnails/525/2018-03-jamiroquai.jpg"
+                alt="Card image cap"
+              />
+
+              <div class="card-body">
+                <small class="d-block card-tag bold">SCLab.</small>
+                <span class="p card-title light">Jamiroquai en Viña 2018</span>
+              </div>
+            </a>
+          </div>
+
+          <!-- code - rueda -->
+          <div class="card service column code">
+            <a
+              href="https://pab-ns.github.io/sclab.co/ruleta-rueda"
+              target="_blank"
+            >
+              <img
+                class="card-img-top rounded-0"
+                src="https://pab-ns.github.io/sclab.co/assets/img/thumbnails/525/2018-04-rrr.jpg"
+                alt="Card image cap"
+              />
+
+              <div class="card-body">
+                <small class="d-block card-tag bold">SCLab.</small>
+                <span class="p card-title light">Ruleta de Reinaldo Rueda</span>
+              </div>
+            </a>
+          </div>
+
+          <!-- code - divino -->
+          <div class="card service column code">
+            <a
+              href="https://pab-ns.github.io/sclab.co/divino-tormento"
+              target="_blank"
+            >
+              <img
+                class="card-img-top rounded-0"
+                src="https://pab-ns.github.io/sclab.co/assets/img/thumbnails/525/2015-05-divino.jpg"
+                alt="Card image cap"
+              />
+
+              <div class="card-body">
+                <small class="d-block card-tag bold">SCLab.</small>
+                <span class="p card-title light">Divino Tormento</span>
+              </div>
+            </a>
+          </div>
+
+          <!-- code - msm -->
+          <div class="card service column code">
+            <a href="https://pab-ns.github.io/sclab.co/msm" target="_blank">
+              <img
+                class="card-img-top rounded-0"
+                src="https://pab-ns.github.io/sclab.co/assets/img/thumbnails/525/2014-12-melbourne.jpg.jpg"
+                alt="Card image cap"
+              />
+
+              <div class="card-body">
+                <small class="d-block card-tag bold">SCLab.</small>
+                <span class="p card-title light">Melbourne Street Music</span>
+              </div>
+            </a>
+          </div>
+
+          <!-- code - confesiones -->
+          <div class="card service column code">
+            <a
+              href="https://pab-ns.github.io/sclab.co/confesiones"
+              target="_blank"
+            >
+              <img
+                class="card-img-top rounded-0"
+                src="https://pab-ns.github.io/sclab.co/assets/img/thumbnails/525/2014-02-confesion.jpg"
+                alt="Card image cap"
+              />
+
+              <div class="card-body">
+                <small class="d-block card-tag bold">SCLab.</small>
+                <span class="p card-title light"
+                  >Confesiones (fútbol chileno)</span
+                >
+              </div>
+            </a>
+          </div>
+
+          <!-- code - cronicas -->
+          <div class="card service column code">
+            <a
+              href="https://pab-ns.github.io/sclab.co/cronicas-valparaiso"
+              target="_blank"
+            >
+              <img
+                class="card-img-top rounded-0"
+                src="https://pab-ns.github.io/sclab.co/assets/img/thumbnails/525/2010-07-valparaiso.jpg"
+                alt="Card image cap"
+              />
+
+              <div class="card-body">
+                <small class="d-block card-tag bold">SCLab.</small>
+                <span class="p card-title light">Crónicas de Valparaíso</span>
+              </div>
+            </a>
+          </div>
+
+          <!-- web - alpha -->
+          <div class="card service column web">
+            <a href="https://alphatools.com.au/" target="_blank">
+              <img
+                class="card-img-top rounded-0"
+                src="img/web-alpha.jpg"
+                alt="Card image cap"
+              />
+
+              <div class="card-body">
+                <small class="d-block card-tag bold">Web</small>
+                <span class="p card-title light">AIVS</span>
+              </div>
+            </a>
+          </div>
+
+          <!-- web - aivs -->
+          <div class="card service column web">
+            <a href="https://aivs.com.au" target="_blank">
+              <img
+                class="card-img-top rounded-0"
+                src="img/web-aivs.jpg"
+                alt="Card image cap"
+              />
+
+              <div class="card-body">
+                <small class="d-block card-tag bold">Web</small>
+                <span class="p card-title light">AIVS</span>
+              </div>
+            </a>
+          </div>
+
+          <!-- app - teleton 2015 -->
+          <div class="card service column app">
+            <a href="https://vimeo.com/154770148" target="_blank">
+              <img
+                class="card-img-top rounded-0"
+                src="https://vumbnail.com/154770148.jpg"
+                alt="Card image cap"
+              />
+
+              <div class="card-body">
+                <small class="d-block card-tag bold">App.</small>
+                <span class="p card-title light">Teletón 2015</span>
+              </div>
+            </a>
+          </div>
+
+          <!-- app - teleton 2016 -->
+          <div class="card service column app">
+            <a href="https://vimeo.com/241380906" target="_blank">
+              <img
+                class="card-img-top rounded-0"
+                src="https://vumbnail.com/241380906.jpg"
+                alt="Card image cap"
+              />
+
+              <div class="card-body">
+                <small class="d-block card-tag bold">App.</small>
+                <span class="p card-title light">Teletón 2016</span>
+              </div>
+            </a>
+          </div>
+
+          <!-- app - teleton 2017 -->
+          <div class="card service column app">
+            <a href="https://youtu.be/4rrwAmQ0kcQ" target="_blank">
+              <img
+                class="card-img-top rounded-0"
+                src="https://i3.ytimg.com/vi/4rrwAmQ0kcQ/maxresdefault.jpg"
+                alt="Card image cap"
+              />
+
+              <div class="card-body">
+                <small class="d-block card-tag bold">App.</small>
+                <span class="p card-title light">Teletón 2016</span>
+              </div>
+            </a>
+          </div>
+
+          <!-- app - ca2015 -->
+          <div class="card service column app">
+            <a href="https://vimeo.com/241380999" target="_blank">
+              <img
+                class="card-img-top rounded-0"
+                src="https://vumbnail.com/241380999.jpg"
+                alt="Card image cap"
+              />
+
+              <div class="card-body">
+                <small class="d-block card-tag bold">App.</small>
+                <span class="p card-title light">Copa América 2015</span>
+              </div>
+            </a>
+          </div>
+
+          <!-- app - uc -->
+          <div class="card service column app">
+            <a href="https://vimeo.com/241380791" target="_blank">
+              <img
+                class="card-img-top rounded-0"
+                src="https://vumbnail.com/241380791.jpg"
+                alt="Card image cap"
+              />
+
+              <div class="card-body">
+                <small class="d-block card-tag bold">App.</small>
+                <span class="p card-title light">Universidad Católica</span>
+              </div>
+            </a>
+          </div>
+
+          <!-- app - bailando -->
+          <div class="card service column app">
+            <a href="https://vimeo.com/205290894" target="_blank">
+              <img
+                class="card-img-top rounded-0"
+                src="https://vumbnail.com/205290894.jpg"
+                alt="Card image cap"
+              />
+
+              <div class="card-body">
+                <small class="d-block card-tag bold">App.</small>
+                <span class="p card-title light">Bailando C13</span>
+              </div>
+            </a>
+          </div>
+
+          <!-- app - vertigo -->
+          <div class="card service column app">
+            <a href="https://vimeo.com/166899152" target="_blank">
+              <img
+                class="card-img-top rounded-0"
+                src="https://vumbnail.com/166899152.jpg"
+                alt="Card image cap"
+              />
+
+              <div class="card-body">
+                <small class="d-block card-tag bold">App.</small>
+                <span class="p card-title light">Vértigo C13</span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container text-center my-5">
+        <small class="bold"
+          >© <span id="year">2024</span> All Rights Reserved</small
+        >
+      </div>
+    </footer>
+
+    <!--  -->
+
+    <!-- JQuery 3.3.1 -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Bootstrap 4.1.1 -->
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
+      integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(function () {
+        $('[data-toggle="tooltip"]').tooltip();
+      });
+    </script>
+
+    <script src="js/index.js"></script>
+  </body>
+</html>
