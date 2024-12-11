@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-M5JWCFSFCF"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-M5JWCFSFCF");
+    </script>
+    <!--  -->
+    <meta
+      name="keywords"
+      content="storytelling, visual, portfolio, design, digital, multimedia, creative, media, video, web, story, web, Digital Media Specialist, Multimedia Design, Multimedia Developer, Creative Technologist, Digital Storytelling, Interactive Content, Visual Storytelling, Motion Graphics, Digital Product Design, Digital Content, Producer, Digital Experience"
+    />
+    <meta name="author" content="Pablo Neyra" />
+    <meta
+      name="description"
+      content="Pablo Neyra | Visual Storyteller & Multimedia Producer"
+    />
+    <meta property="og:title" content="Pablo Neyra" />
+    <meta
+      property="og:image"
+      content="https://pab-ns.github.io/hello/img/meta-img.jpg"
+    />
+    <meta property="og:url" content="https://pab-ns.github.io/hello/" />
+    <meta name="twitter:card" content="summary" />
+    <meta property="og:site_name" content="Pablo Neyra" />
+    <!-- -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="https://pab-ns.github.io/hello/img/favicon_io/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="https://pab-ns.github.io/hello/img/favicon_io/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="https://pab-ns.github.io/hello/img/favicon_io/favicon-16x16.png"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Pablo Neyra</title>
+  </head>
+
+  <body class="md:px-12 bg-zinc-50 font-sans text-sm text-neutral-800">
+    <section class="flex-row md:flex min-h-screen gap-x-0">
+      <!-- left -->
+      <div class="w-full md:w-1/4 p-6 md:sticky md:top-0 md:h-screen">
+        <div class="mb-8 font-bold text-black">
+          <p class="text-6xl uppercase">Pablo Neyra</p>
+          <p class="pt-2">Visual Storyteller & Multimedia Producer</p>
+        </div>
+
+        <p class="mb-8 text-neutral-700">
+          Based in Australia.<br />
+          Current Digital Video Producer at
+          <a
+            href="https://epicagile.com.au/"
+            target="_blank"
+            class="text-red-500 hover:text-red-700"
+            >EPiC</a
+          >. <br />
+          Previously at AWDD, and Clan Tribe.
+        </p>
+
+        <p>
+          <!-- filter sm -->
+        </p>
+
+        <p class="md:hidden mb-8 text-neutral-700" id="myBtnContainer">
+          Creating content and working with
+          <span
+            class="filter_btn text-red-500 hover:text-red-700 cursor-pointer font-serif italic"
+            onclick="filterSelection('filter-fe')"
+            >film + edit</span
+          >,
+          <span
+            class="filter_btn text-red-500 hover:text-red-700 cursor-pointer font-serif italic"
+            onclick="filterSelection('filter-dd')"
+            >digital design</span
+          >,
+          <span
+            class="filter_btn text-red-500 hover:text-red-700 cursor-pointer font-serif italic"
+            onclick="filterSelection('filter-web')"
+            >web development</span
+          >,
+          <span
+            class="filter_btn text-red-500 hover:text-red-700 cursor-pointer font-serif italic"
+            onclick="filterSelection('filter-mg')"
+            >motion graphics</span
+          >
+          &
+          <span
+            class="filter_btn filter_current text-red-500 hover:text-red-700 cursor-pointer font-serif italic"
+            onclick="filterSelection('all')"
+            >everything</span
+          >
+          in between.
+        </p>
+
+        <!-- filter md -->
+        <p class="hidden md:block mb-8 text-neutral-700" id="myBtnContainer">
+          Creating content and working with
+          <br />
+          <span
+            class="filter_btn text-red-500 hover:text-red-700 cursor-pointer font-serif italic"
+            onclick="filterSelection('filter-fe')"
+            >film + edit</span
+          >, <br />
+          <span
+            class="filter_btn text-red-500 hover:text-red-700 cursor-pointer font-serif italic"
+            onclick="filterSelection('filter-dd')"
+            >digital design</span
+          >, <br />
+          <span
+            class="filter_btn text-red-500 hover:text-red-700 cursor-pointer font-serif italic"
+            onclick="filterSelection('filter-web')"
+            >web development</span
+          >, <br />
+          <span
+            class="filter_btn text-red-500 hover:text-red-700 cursor-pointer font-serif italic"
+            onclick="filterSelection('filter-mg')"
+            >motion graphics</span
+          >
+          & <br />
+          <span
+            class="filter_btn filter_current text-red-500 hover:text-red-700 cursor-pointer font-serif italic"
+            onclick="filterSelection('all')"
+            >everything</span
+          >
+          in between.
+        </p>
+
+        <!-- links 2 -->
+        <div
+          class="flex justify-space-around gap-x-4 mb-2 md:flex-col items-start text-sm"
+        >
+          <a href="#" target="_blank" class="text-red-500 hover:text-red-700"
+            >LinkedIn</a
+          >
+        </div>
+
+        <div class="py-0">
+          <p class="text-2xs text-black/50">
+            &copy;
+            <span id="date"></span>
+          </p>
+        </div>
+      </div>
+
+      <!-- right -->
+      <div class="w-full md:w-3/4 px-4">
+        <div class="grid grid-cols-2 md:grid-cols-3 gap-4 p-4">
+          <!-- 11 manolo -->
+          <a
+            href="https://www.11demanolo.com/"
+            target="_blank"
+            class="filter_card filter_column filter-dd filter-web"
+          >
+            <div class="duration-200 hover:text-red-500">
+              <img
+                src="https://pab-ns.github.io/hello/img/thumb/thumb_web-11m.webp"
+                alt=""
+                class="w-auto shadow-md"
+              />
+              <div class="text-center py-2">
+                <p class="">11 de Manolo</p>
+                <p class="font-serif italic text-neutral-500 text-2xs">
+                  (Digital Design + Development)
+                </p>
+              </div>
+            </div>
+          </a>
+
+          <!-- epic-sm-atf -->
+          <a
+            href="https://vimeo.com/1029835435/2cd3c6f8b3"
+            target="_blank"
+            class="filter_card filter_column filter-mg"
+          >
+            <div class="duration-200 hover:text-red-500">
+              <img
+                src="https://pab-ns.github.io/hello/img/thumb/thumb_mg-sm-atf.webp"
+                alt=""
+                class="w-auto shadow-md"
+              />
+              <div class="text-center py-2">
+                <p class="">EPiC Facilitator</p>
+                <p class="font-serif italic text-neutral-500 text-2xs">
+                  (Motion Graphics)
+                </p>
+              </div>
+            </div>
+          </a>
+
+          <!-- epic-sm-lcf -->
+          <a
+            href="https://vimeo.com/982369377/481342e51d"
+            target="_blank"
+            class="filter_card filter_column filter-mg"
+          >
+            <div class="duration-200 hover:text-red-500">
+              <img
+                src="https://pab-ns.github.io/hello/img/thumb/thumb_mg-lcf.webp"
+                alt=""
+                class="w-auto shadow-md"
+              />
+              <div class="text-center py-2">
+                <p class="">EPiC Lead Change Foundation</p>
+                <p class="font-serif italic text-neutral-500 text-2xs">
+                  (Motion Graphics)
+                </p>
+              </div>
+            </div>
+          </a>
+
+          <!-- epic-fff -->
+          <a
+            href="https://vimeo.com/923640534/4085641b33"
+            target="_blank"
+            class="filter_card filter_column filter-mg"
+          >
+            <div class="duration-200 hover:text-red-500">
+              <img
+                src="https://pab-ns.github.io/hello/img/thumb/thumb_epic-fff.webp"
+                alt=""
+                class="w-auto shadow-md"
+              />
+              <div class="text-center py-2">
+                <p class="">EPiC Fitter, Faster, Future</p>
+                <p class="font-serif italic text-neutral-500 text-2xs">
+                  (Motion Graphics)
+                </p>
+              </div>
+            </div>
+          </a>
+
+          <!-- app-viña -->
+          <a
+            href="https://www.behance.net/gallery/195122221/Claro-Vina-24-App"
+            target="_blank"
+            class="filter_card filter_column filter-dd"
+          >
+            <div class="duration-200 hover:text-red-500">
+              <img
+                src="https://pab-ns.github.io/hello/img/thumb/thumb_app-vina.webp"
+                alt=""
+                class="w-auto shadow-md"
+              />
+              <div class="text-center py-2">
+                <p class="">App. Festival de Viña 2024</p>
+                <p class="font-serif italic text-neutral-500 text-2xs">
+                  (Digital Design)
+                </p>
+              </div>
+            </div>
+          </a>
+
+          <!-- epic-ask -->
+          <a
+            href="https://youtu.be/rJMR1cymLfc"
+            target="_blank"
+            class="filter_card filter_column filter-fe"
+          >
+            <div class="duration-200 hover:text-red-500">
+              <img
+                src="https://pab-ns.github.io/hello/img/thumb/thumb_epic-ask.webp"
+                alt=""
+                class="w-auto shadow-md"
+              />
+              <div class="text-center py-2">
+                <p class="">Ask EPiC</p>
+                <p class="font-serif italic text-neutral-500 text-2xs">
+                  (Film + Edit)
+                </p>
+              </div>
+            </div>
+          </a>
+
+          <!-- epic-dear -->
+          <a
+            href="https://vimeo.com/887120743"
+            target="_blank"
+            class="filter_card filter_column filter-mg"
+          >
+            <div class="duration-200 hover:text-red-500">
+              <img
+                src="https://pab-ns.github.io/hello/img/thumb/thumb_epic-dear.webp"
+                alt=""
+                class="w-auto shadow-md"
+              />
+              <div class="text-center py-2">
+                <p class="">Dear EPiC...</p>
+                <p class="font-serif italic text-neutral-500 text-2xs">
+                  (Motion Graphics)
+                </p>
+              </div>
+            </div>
+          </a>
+
+          <!-- epic-tips -->
+          <a
+            href="https://vimeo.com/889725422"
+            target="_blank"
+            class="filter_card filter_column filter-mg"
+          >
+            <div class="duration-200 hover:text-red-500">
+              <img
+                src="https://pab-ns.github.io/hello/img/thumb/thumb_epic-tips.webp"
+                alt=""
+                class="w-auto shadow-md"
+              />
+              <div class="text-center py-2">
+                <p class="">EPiC Tips</p>
+                <p class="font-serif italic text-neutral-500 text-2xs">
+                  (Motion Graphics)
+                </p>
+              </div>
+            </div>
+          </a>
+
+          <!-- epic-next-wise -->
+          <a
+            href="https://vimeo.com/847895305/87844a2340"
+            target="_blank"
+            class="filter_card filter_column filter-mg"
+          >
+            <div class="duration-200 hover:text-red-500">
+              <img
+                src="https://pab-ns.github.io/hello/img/thumb/thumb_mg-nws.webp"
+                alt=""
+                class="w-auto shadow-md"
+              />
+              <div class="text-center py-2">
+                <p class="">Next-Wise Steps</p>
+                <p class="font-serif italic text-neutral-500 text-2xs">
+                  (Motion Graphics)
+                </p>
+              </div>
+            </div>
+          </a>
+
+          <!-- web-aivs -->
+          <a
+            href="https://aivs.com.au/"
+            target="_blank"
+            class="filter_card filter_column filter-dd"
+          >
+            <div class="duration-200 hover:text-red-500">
+              <img
+                src="https://pab-ns.github.io/hello/img/thumb/thumb_web-aivs.webp"
+                alt=""
+                class="w-auto shadow-md"
+              />
+              <div class="text-center py-2">
+                <p class="">AIVS</p>
+                <p class="font-serif italic text-neutral-500 text-2xs">
+                  (Digital Design)
+                </p>
+              </div>
+            </div>
+          </a>
+
+          <!-- atp-2021 -->
+          <a
+            href="https://youtu.be/l5QI1Q_1MuM"
+            target="_blank"
+            class="filter_card filter_column filter-fe"
+          >
+            <div class="duration-200 hover:text-red-500">
+              <img
+                src="https://pab-ns.github.io/hello/img/thumb/thumb_atp-1.webp"
+                alt=""
+                class="w-auto shadow-md"
+              />
+              <div class="text-center py-2">
+                <p class="">ATP Chile Open</p>
+                <p class="font-serif italic text-neutral-500 text-2xs">
+                  (Film + Edit)
+                </p>
+              </div>
+            </div>
+          </a>
+
+          <!-- atp-tiafoe -->
+          <a
+            href="https://youtu.be/_7X2ss5OHoM"
+            target="_blank"
+            class="filter_card filter_column filter-fe"
+          >
+            <div class="duration-200 hover:text-red-500">
+              <img
+                src="https://pab-ns.github.io/hello/img/thumb/thumb_atp-tiafoe.webp"
+                alt=""
+                class="w-auto shadow-md"
+              />
+              <div class="text-center py-2">
+                <p class="">ATP Chile Open – Frances Tiafoe</p>
+                <p class="font-serif italic text-neutral-500 text-2xs">
+                  (Film + Edit)
+                </p>
+              </div>
+            </div>
+          </a>
+
+          <!-- atp-rune -->
+          <a
+            href="https://youtu.be/WEtMBe9L5yk"
+            target="_blank"
+            class="filter_card filter_column filter-fe"
+          >
+            <div class="duration-200 hover:text-red-500">
+              <img
+                src="https://pab-ns.github.io/hello/img/thumb/thumb_atp-rune.webp"
+                alt=""
+                class="w-auto shadow-md"
+              />
+              <div class="text-center py-2">
+                <p class="">ATP Chile Open – Holger Rune</p>
+                <p class="font-serif italic text-neutral-500 text-2xs">
+                  (Film + Edit)
+                </p>
+              </div>
+            </div>
+          </a>
+
+          <!-- 100 covid -->
+          <a
+            href="https://pab-ns.github.io/sclab.co/100-pandemia"
+            target="_blank"
+            class="filter_card filter_column filter-dd filter-web"
+          >
+            <div class="duration-200 hover:text-red-500">
+              <img
+                src="https://pab-ns.github.io/hello/img/thumb/thumb_web-100.webp"
+                alt=""
+                class="w-auto shadow-md"
+              />
+              <div class="text-center py-2">
+                <p class="">100 days of Covid</p>
+                <p class="font-serif italic text-neutral-500 text-2xs">
+                  (Digital Design + Development)
+                </p>
+              </div>
+            </div>
+          </a>
+
+          <!-- 50 estallido -->
+          <a
+            href="https://pab-ns.github.io/sclab.co/50-dias-estallido"
+            target="_blank"
+            class="filter_card filter_column filter-dd filter-web"
+          >
+            <div class="duration-200 hover:text-red-500">
+              <img
+                src="https://pab-ns.github.io/hello/img/thumb/thumb_web-50chl.webp"
+                alt=""
+                class="w-auto shadow-md"
+              />
+              <div class="text-center py-2">
+                <p class="">50 days of the Social Unrest</p>
+                <p class="font-serif italic text-neutral-500 text-2xs">
+                  (Digital Design + Development)
+                </p>
+              </div>
+            </div>
+          </a>
+
+          <!-- la roja -->
+          <a
+            href="https://www.behance.net/gallery/195122175/La-Roja-App"
+            target="_blank"
+            class="filter_card filter_column filter-dd"
+          >
+            <div class="duration-200 hover:text-red-500">
+              <img
+                src="https://pab-ns.github.io/hello/img/thumb/thumb_app-roja.webp"
+                alt=""
+                class="w-auto shadow-md"
+              />
+              <div class="text-center py-2">
+                <p class="">"La Roja" App.</p>
+                <p class="font-serif italic text-neutral-500 text-2xs">
+                  (Digital Design)
+                </p>
+              </div>
+            </div>
+          </a>
+
+          <!-- metro -->
+          <a
+            href="https://pab-ns.github.io/sclab.co/mujeres-metro"
+            target="_blank"
+            class="filter_card filter_column filter-dd filter-web"
+          >
+            <div class="duration-200 hover:text-red-500">
+              <img
+                src="https://pab-ns.github.io/hello/img/thumb/thumb_web-8m.webp"
+                alt=""
+                class="w-auto shadow-md"
+              />
+              <div class="text-center py-2">
+                <p class="">Santiago Metro's Women</p>
+                <p class="font-serif italic text-neutral-500 text-2xs">
+                  (Digital Design + Development)
+                </p>
+              </div>
+            </div>
+          </a>
+
+          <!-- cc -->
+          <a
+            href="https://pab-ns.github.io/sclab.co/dt-cc"
+            target="_blank"
+            class="filter_card filter_column filter-dd filter-web"
+          >
+            <div class="duration-200 hover:text-red-500">
+              <img
+                src="https://pab-ns.github.io/hello/img/thumb/thumb_web-cc.webp"
+                alt=""
+                class="w-auto shadow-md"
+              />
+              <div class="text-center py-2">
+                <p class="">Colo-Colo's best Coach since 91'</p>
+                <p class="font-serif italic text-neutral-500 text-2xs">
+                  (Digital Design + Development)
+                </p>
+              </div>
+            </div>
+          </a>
+
+          <!-- app movistar -->
+          <a
+            href="https://www.behance.net/gallery/195121463/Movistar-Arena-App-(Concept-Prototype)"
+            target="_blank"
+            class="filter_card filter_column filter-dd"
+          >
+            <div class="duration-200 hover:text-red-500">
+              <img
+                src="https://pab-ns.github.io/hello/img/thumb/thumb_app-mov.webp"
+                alt=""
+                class="w-auto shadow-md"
+              />
+              <div class="text-center py-2">
+                <p class="">Movistar Arena App.</p>
+                <p class="font-serif italic text-neutral-500 text-2xs">
+                  (Digital Design)
+                </p>
+              </div>
+            </div>
+          </a>
+
+          <!-- mas-trabajo -->
+          <a
+            href="https://pab-ns.github.io/sclab.co/mas-trabajo/arregla/"
+            target="_blank"
+            class="filter_card filter_column filter-dd filter-web"
+          >
+            <div class="duration-200 hover:text-red-500">
+              <img
+                src="https://pab-ns.github.io/hello/img/thumb/thumb_web-mt.webp"
+                alt=""
+                class="w-auto shadow-md"
+              />
+              <div class="text-center py-2">
+                <p class="">More than a job...</p>
+                <p class="font-serif italic text-neutral-500 text-2xs">
+                  (Digital Design + Development)
+                </p>
+              </div>
+            </div>
+          </a>
+
+          <!-- jamiroquai -->
+          <a
+            href="https://pab-ns.github.io/sclab.co/jamiroquai-festival"
+            target="_blank"
+            class="filter_card filter_column filter-dd filter-web"
+          >
+            <div class="duration-200 hover:text-red-500">
+              <img
+                src="https://pab-ns.github.io/hello/img/thumb/thumb_web-jam.webp"
+                alt=""
+                class="w-auto shadow-md"
+              />
+              <div class="text-center py-2">
+                <p class="">Jamiroquai @Viña 2018</p>
+                <p class="font-serif italic text-neutral-500 text-2xs">
+                  (Digital Design + Development)
+                </p>
+              </div>
+            </div>
+          </a>
+
+          <!-- chilenismos -->
+          <a
+            href="https://pab-ns.github.io/sclab.co/nuevo-chile/bueno-malo-chilenismos/"
+            target="_blank"
+            class="filter_card filter_column filter-dd filter-web"
+          >
+            <div class="duration-200 hover:text-red-500">
+              <img
+                src="https://pab-ns.github.io/hello/img/thumb/thumb_web-nchl.webp"
+                alt=""
+                class="w-auto shadow-md"
+              />
+              <div class="text-center py-2">
+                <p class="">The good, the bad and the slangs</p>
+                <p class="font-serif italic text-neutral-500 text-2xs">
+                  (Digital Design + Development)
+                </p>
+              </div>
+            </div>
+          </a>
+
+          <!-- seduc mg -->
+          <a
+            href="https://youtu.be/wpTjszJl-DI"
+            target="_blank"
+            class="filter_card filter_column filter-fe"
+          >
+            <div class="duration-200 hover:text-red-500">
+              <img
+                src="https://pab-ns.github.io/hello/img/thumb/thumb_seduc-mg.webp"
+                alt=""
+                class="w-auto shadow-md"
+              />
+              <div class="text-center py-2">
+                <p class="">SEDUC – Masters degree</p>
+                <p class="font-serif italic text-neutral-500 text-2xs">
+                  (Film + Edit)
+                </p>
+              </div>
+            </div>
+          </a>
+
+          <!-- seduc prof -->
+          <a
+            href="https://youtu.be/CGdPGbdyhXI"
+            target="_blank"
+            class="filter_card filter_column filter-fe"
+          >
+            <div class="duration-200 hover:text-red-500">
+              <img
+                src="https://pab-ns.github.io/hello/img/thumb/thumb_seduc.webp"
+                alt=""
+                class="w-auto shadow-md"
+              />
+              <div class="text-center py-2">
+                <p class="">SEDUC</p>
+                <p class="font-serif italic text-neutral-500 text-2xs">
+                  (Film + Edit)
+                </p>
+              </div>
+            </div>
+          </a>
+
+          <!-- msm -->
+          <a
+            href="https://pab-ns.github.io/sclab.co/msm"
+            target="_blank"
+            class="filter_card filter_column filter-fe filter-dd filter-web"
+          >
+            <div class="duration-200 hover:text-red-500">
+              <img
+                src="https://pab-ns.github.io/hello/img/thumb/thumb_msm.webp"
+                alt=""
+                class="w-auto shadow-md"
+              />
+              <div class="text-center py-2">
+                <p class="">Melbourne Street Music</p>
+                <p class="font-serif italic text-neutral-500 text-2xs">
+                  (Film+Edit + Digital Design + Development)
+                </p>
+              </div>
+            </div>
+          </a>
+
+          <!-- msm gw-->
+          <a
+            href="https://vimeo.com/112264068"
+            target="_blank"
+            class="filter_card filter_column filter-fe"
+          >
+            <div class="duration-200 hover:text-red-500">
+              <img
+                src="https://pab-ns.github.io/hello/img/thumb/thumb_msm-gw.webp"
+                alt=""
+                class="w-auto shadow-md"
+              />
+              <div class="text-center py-2">
+                <p class="">Gareth Wiecko – Melbourne Street Music</p>
+                <p class="font-serif italic text-neutral-500 text-2xs">
+                  (Film + Edit)
+                </p>
+              </div>
+            </div>
+          </a>
+
+          <!-- msm gk-->
+          <a
+            href="https://vimeo.com/111160978"
+            target="_blank"
+            class="filter_card filter_column filter-fe"
+          >
+            <div class="duration-200 hover:text-red-500">
+              <img
+                src="https://pab-ns.github.io/hello/img/thumb/thumb_msm-gk.webp"
+                alt=""
+                class="w-auto shadow-md"
+              />
+              <div class="text-center py-2">
+                <p class="">George Kamikawa – Melbourne Street Music</p>
+                <p class="font-serif italic text-neutral-500 text-2xs">
+                  (Film + Edit)
+                </p>
+              </div>
+            </div>
+          </a>
+
+          <!-- emol tv -->
+          <a
+            href="https://youtu.be/YVVT5Iye014"
+            target="_blank"
+            class="filter_card filter_column filter-fe"
+          >
+            <div class="duration-200 hover:text-red-500">
+              <img
+                src="https://pab-ns.github.io/hello/img/thumb/thumb_media-emol.webp"
+                alt=""
+                class="w-auto shadow-md"
+              />
+              <div class="text-center py-2">
+                <p class="">David Coulthard – Emol TV</p>
+                <p class="font-serif italic text-neutral-500 text-2xs">
+                  (Film + Edit)
+                </p>
+              </div>
+            </div>
+          </a>
+
+          <!-- valpo -->
+          <a
+            href="https://pab-ns.github.io/sclab.co/cronicas-valparaiso"
+            target="_blank"
+            class="filter_card filter_column filter-fe filter-dd filter-web"
+          >
+            <div class="duration-200 hover:text-red-500">
+              <img
+                src="https://pab-ns.github.io/hello/img/thumb/thumb_valp.webp"
+                alt=""
+                class="w-auto shadow-md"
+              />
+              <div class="text-center py-2">
+                <p class="">Valparaíso Chronicles</p>
+                <p class="font-serif italic text-neutral-500 text-2xs">
+                  (Film+Edit + Digital Design + Development)
+                </p>
+              </div>
+            </div>
+          </a>
+
+          <!-- valpo - fg -->
+          <a
+            href="https://youtu.be/6XNbUFl1nQM"
+            target="_blank"
+            class="filter_card filter_column filter-fe"
+          >
+            <div class="duration-200 hover:text-red-500">
+              <img
+                src="https://pab-ns.github.io/hello/img/thumb/thumb_valp-fg.webp"
+                alt=""
+                class="w-auto shadow-md"
+              />
+              <div class="text-center py-2">
+                <p class="">Fragments – Valparaíso Chronicles</p>
+                <p class="font-serif italic text-neutral-500 text-2xs">
+                  (Film + Edit)
+                </p>
+              </div>
+            </div>
+          </a>
+
+          <!-- valpo - sp -->
+          <a
+            href="https://youtu.be/WncJpU7YWNs"
+            target="_blank"
+            class="filter_card filter_column filter-fe"
+          >
+            <div class="duration-200 hover:text-red-500">
+              <img
+                src="https://pab-ns.github.io/hello/img/thumb/thumb_valp-sp.webp"
+                alt=""
+                class="w-auto shadow-md"
+              />
+              <div class="text-center py-2">
+                <p class="">Personal Seal – Valparaíso Chronicles</p>
+                <p class="font-serif italic text-neutral-500 text-2xs">
+                  (Film + Edit)
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      window.onload = function () {
+        var date = new Date();
+
+        document.getElementById("date").innerHTML = date.getFullYear();
+      };
+    </script>
+    <script src="script.js"></script>
+  </body>
+</html>

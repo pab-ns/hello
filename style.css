@@ -1,0 +1,10 @@
+::selection{/*background: #ffe5aa; */ background: #ef4444; color:white}
+.text-2xs{font-size: .6rem;}
+
+/* Filter */
+.filter_column {display: none; /* Hide columns by default */}
+.filter_show {display: block; /* The "show" class is added to the filtered elements */}
+.filter_current {
+    text-decoration: line-through;
+    color: #ef4444
+  }
