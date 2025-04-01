@@ -1,48 +1,39 @@
-// Filter & Grid
-  filterSelection("all") // Execute the function and show all columns
-function filterSelection(c) {
-  var x, i;
-  x = document.getElementsByClassName("filter_card");
-  if (c == "all") c = "";
-  // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
-  for (i = 0; i < x.length; i++) {
-    w3RemoveClass(x[i], "filter_show");
-    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "filter_show");
-  }
-}
-
-// Show filtered elements
-function w3AddClass(element, name) {
-  var i, arr1, arr2;
-  arr1 = element.className.split(" ");
-  arr2 = name.split(" ");
-  for (i = 0; i < arr2.length; i++) {
-    if (arr1.indexOf(arr2[i]) == -1) {
-      element.className += " " + arr2[i];
+  async function fetchProjects() {
+    try {
+      // Fetch the CSV file
+      const response = await fetch("works.csv");
+      const csvText = await response.text();
+      // Convert CSV to array of objects
+      const projects = csvToArray(csvText);
+      // Get container
+      const container = document.getElementById("work-container");
+      // Loop through projects and create elements
+      projects.forEach((project, index) => {
+        const projectElement = document.createElement("a");
+        projectElement.href = project.href;
+        projectElement.target = "_blank";
+        projectElement.className = "hover:border-[0.1rem] border-neutral-400 rounded-xl duration-300";
+        projectElement.id = `work${index + 1}`; // Unique ID
+        projectElement.innerHTML = `
+          <img src="${project.img}" alt="${project.name}" class="w-auto rounded-xl shadow-md">
+          <div class="py-4 space-y-1 ml-2">
+            <p class="text-sm text-neutral-900">${project.name}</p>
+            <p class="text-xxs font-mono text-neutral-500">${project.category}</p>
+          </div>
+        `;
+        container.appendChild(projectElement);
+      });
+    } catch (error) {
+      console.error("Error fetching projects:", error);
     }
   }
-}
-
-// Hide elements that are not selected
-function w3RemoveClass(element, name) {
-  var i, arr1, arr2;
-  arr1 = element.className.split(" ");
-  arr2 = name.split(" ");
-  for (i = 0; i < arr2.length; i++) {
-    while (arr1.indexOf(arr2[i]) > -1) {
-      arr1.splice(arr1.indexOf(arr2[i]), 1);
-    }
+  // Convert CSV to an array of objects
+  function csvToArray(csvText) {
+    const rows = csvText.split("\n").slice(1); // Skip header
+    return rows.map(row => {
+      const [name, category, href, img] = row.split(",");
+      return { name, category, href, img };
+    });
   }
-  element.className = arr1.join(" ");
-}
-
-// Add current class to the current button (highlight it)
-var btnContainer = document.getElementById("myBtnContainer");
-var btns = btnContainer.getElementsByClassName("filter_btn");
-for (var i = 0; i < btns.length; i++) {
-  btns[i].addEventListener("click", function(){
-    var current = document.getElementsByClassName("filter_current");
-    current[0].className = current[0].className.replace(" filter_current", "");
-    this.className += " filter_current";
-  });
-}
+  // Call function on page load
+  fetchProjects();
