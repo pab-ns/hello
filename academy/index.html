@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Rock+Salt&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pab-ns.github.io/epic/css/style.css">
+    <script src="https://pab-ns.github.io/epic/js/menu.js" defer></script>
+    <script src="https://pab-ns.github.io/epic/js/carousel.js" defer></script>
+
+    <title>EPiC Academy - 3</title>
+
+</head>
+<body>
+<!-- NAV container -->
+<nav class="relative container mx-auto p-6">
+  <!-- flex container for all items -->
+   <div class="flex itmes-center justify-between">
+      <!-- flex container for logo/menu-->
+       <div class="flex items-center space-x-20">
+          <!-- logo -->
+           <a href="https://pab-ns.github.io/epic/">
+           <img src="https://pab-ns.github.io/epic/images/logo-colour.svg" alt="" class="h-6">
+          </a>
+           <!-- left menu -->
+            <div class="hidden lg:flex space-x-8 text-base">
+
+              <!-- dropdown WHAT -->
+              <div class="relative inline-block group z-10" id="dropdown-wrapper"> 
+                  <!-- menu item  -->
+                   <div class="inline-flex items-center space-x-1 text-epicBlue hover:text-epiclightBlue group-focus:bg-epiclightBlue" id="dropdown-toggle">
+                    <a href="#">What We Do</a>
+                    <svg width="12px" height="8px" class="-rotate-90" id="arrow-icon">
+                      <path
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        d="M1 1 L6 6 L11 1"
+                      />
+                    </svg>
+
+                   </div>
+                <!-- dropdown menu -->
+                <ul id="dropdown-menu" class="absolute left-0 mt-2 w-60 p-5 bg-white rounded-sm shadow-lg hidden">
+                  <li><a href="https://pab-ns.github.io/epic/academy/" class="block px-4 py-2 text-epicBlue hover:text-epiclightBlue">EPiC Academy</a></li>
+                  <li><a href="https://pab-ns.github.io/epic/masterclasses/" class="block px-4 py-2 text-epicBlue hover:text-epiclightBlue">EPiC Masterclasses</a></li>
+                  <li><a href="#" class="block px-4 py-2 text-epicBlue hover:text-epiclightBlue opacity-15">EPiC Accelerators</a></li>
+                  <li><a href="#" class="block px-4 py-2 text-epicBlue hover:text-epiclightBlue opacity-15">EPiC Ways of Working</a></li>
+
+
+                </ul>
+              </div>
+              <a href="#" class="text-epicBlue hover:text-epiclightBlue opacity-15">What We've Done</a>
+              <a href="https://pab-ns.github.io/epic/why1.html" class="text-epicBlue hover:text-epiclightBlue">Why We Do It</a>
+              <a href="https://pab-ns.github.io/epic/who1.html" class="text-epicBlue hover:text-epiclightBlue">Who We Are</a>
+              <a href="https://training.epicagile.com.au/w/au/upcoming/" target="_blank" class="text-epicBlue hover:text-epiclightBlue">Certified Training</a>
+            </div>
+       </div>
+       <!-- right button -->
+        <div class="hidden lg:flex items-center space-x-6">
+          <a href="https://pab-ns.github.io/epic/#contact-form">
+          <button class="bg-epicGreen hover:bg-epiclightBlue transition-all duration-300 text-white py-3 px-7 rounded-full text-sm font-bold uppercase items-center">
+              <span>Let's Talk</span>
+            </button>
+          </a>  
+        </div>
+
+        <!-- HAMBURGER ICON BUTTON -->
+         <button class="block hamburger lg:hidden focus:outlines-none" id="menu-btn" type="button">
+             <span class="hamburger-top"></span>
+             <span class="hamburger-middle"></span>
+             <span class="hamburger-bottom"></span>
+         </button>
+
+   </div>
+   <!-- MOBILE MENU -->
+    <div id="menu" class="absolute hidden p-6 rounded-md bg-epicBlue left-6 right-6 top-20 z-30">
+      <div class="flex flex-col items-center justify-center w-full space-y-6 text-white text-base text-center">
+         <span class="w-full text-sm opacity-50">What We Do</span>
+         <a href="https://pab-ns.github.io/epic/academy/" class="w-full">EPiC Academy</a>
+         <a href="https://pab-ns.github.io/epic/masterclasses/" class="w-full">EPiC Masterclasses</a>
+         <a href="#" class="w-full opacity-15">EPiC Accelerators</a>
+         <a href="#" class="w-full opacity-15">EPiC Ways of Working</a>
+         <a href="#" class="w-full pt-6 border-t border-gray-400 opacity-15">What We've Done</a>
+         <a href="https://pab-ns.github.io/epic/why1.html" class="w-full">Why We Do It</a>
+         <a href="https://pab-ns.github.io/epic/who1.html" class="w-full">Who We Are</a>
+         <a href="https://training.epicagile.com.au/w/au/upcoming/" target="_blank" class="w-full">Certified Training</a>
+         <a href="https://pab-ns.github.io/epic/#contact-form" class="w-full py-3 rounded-full tracking-wide uppercase bg-epicGreen font-bold">Let's Talk</a>
+      </div>
+    </div>
+</nav>
+
+<!-- header -->
+<section class="container max-w-6xl mx-auto input-mobile-padding">
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-20 items-center">
+    <!-- left -->
+    <div class="flex flex-col space-y-5 text-center md:text-left">
+     <h1 class="input-page-title text-epicBlue input-mobile-padding">EPiC Academy</h1>
+     <p class="input-lead-text ">
+      <b>Build the muscle your organisation needs</b>. With 1,000’s of graduates every year, and 10+ years of steering organisations through transformational change, we know the skills that get results.
+   </p>
+   </div>
+<!-- right -->
+<iframe class="max-w-4xl w-full mx-auto aspect-video rounded-xl shadow-lg" src="https://player.vimeo.com/video/1028273176?h=ffae70f1a1&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" allowfullscreen></iframe>
+
+</div>
+</section>
+
+<!-- stat -->
+<section class="container max-w-6xl mx-auto input-mobile-padding my-20">
+      <h2 class="text-center text-epicGreen mb-10 capitalize input-secondary-section-title">Trusted by thousands</h2>
+      <p class="input-lead-text  max-w-2xl mx-auto text-center">
+        <b>Designed for you</b>. Whether you are after strong foundations, a practitioner who wants the tips of the trade, or an advanced expert in your area. We're confident we can help take you to the next level. Let's face it, training won't solve the world’s problems, but it’s a great start. We align to our proven 70-20-10 model of learning.
+     </p>      
+
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-2 px-6 mt-10">
+              
+          <!-- stat1 -->
+          <div class="flex flex-col p-6 mx-auto text-center">
+          <h5 class="text-6xl capitalize text-epiclightBlue mb-2 font-bold">+88%</h5>
+          <span class="text-sm ">Participant NPS</span>
+          </div> 
+          <!-- stat2 -->
+          <div class="flex flex-col p-6 mx-auto text-center">
+              <h5 class="text-6xl capitalize text-epiclightBlue mb-2 font-bold">4.8/⁵</h5>
+              <span class="text-sm ">Instructor Rating</span>
+          </div>  
+          <!-- stat3 -->
+          <div class="flex flex-col p-6 mx-auto text-center">
+              <h5 class="text-6xl capitalize text-epiclightBlue mb-2 font-bold">200+</h5>
+              <span class="text-sm ">Organisations Trust our Training</span>
+          </div>   
+          <!-- stat4 -->
+          <div class="flex flex-col p-6 mx-auto text-center">
+              <h5 class="text-6xl capitalize text-epiclightBlue mb-2 font-bold">1000+</h5>
+              <span class="text-sm ">Student Trained Yearly</span>
+          </div>                                    
+      </div>              
+</section>
+
+<!-- pathways -->
+<section class="container max-w-7xl mx-auto my-20 input-mobile-padding">
+  <h2 class="input-section-title text-center text-epicBlue mb-10">Capability Pathways</h2>
+  <p class="input-lead-text  max-w-2xl mx-auto text-center md:pb-14">
+    These straightforward, no-nonsense pathways include a bunch of certifications (hello, ICAgile & Scrum.Org).
+  </p>
+
+  <div class="grid grid-cols-1 md:grid-cols-5 gap-y-10">
+    <!-- product -->
+    <div class="flex flex-col mx-auto text-center">
+      <div class="justify-between space-y-4">
+        <!-- content -->
+         <div>
+          <div class="mb-2">
+            <img src="https://pab-ns.github.io/epic/images/pathway-icons/icon-product.png" class="mx-auto" width="100" alt="">
+          </div>
+          <h5 class="text-2xl capitalize text-epicBlue" >Product Mastery</h5>
+        </div>
+         
+         <!-- button -->
+          <a href="https://pab-ns.github.io/epic/academy/pathway-product2.html">
+          <button class="bg-epicOrange hover:bg-orange-700 transition-all duration-200 text-white py-3 px-7 rounded-full items-center tracking-wider text-xxs font-bold uppercase">
+             <span>Build with love</span>
+          </button>
+        </a>
+       
+       </div>  
+    </div>
+    <!-- delivery -->
+    <div class="flex flex-col mx-auto text-center">
+      <div class="justify-between space-y-4">
+        <!-- content -->
+         <div>
+          <div class="mb-2">
+            <img src="https://pab-ns.github.io/epic/images/pathway-icons/icon-delivery.png" class="mx-auto" width="100" alt="">
+          </div>
+          <h5 class="text-2xl capitalize text-epicBlue" >Delivery Excellence</h5>
+        </div>
+         
+         <!-- button -->
+          <a href="https://pab-ns.github.io/epic/academy/pathway-delivery2.html">
+          <button class="bg-rose-500 hover:bg-fuchsia-700 transition-all duration-200 text-white py-3 px-7 rounded-full items-center tracking-wider text-xxs font-bold uppercase">
+             <span>Release Value</span>
+          </a>
+          </button>
+       
+       </div>  
+    </div>
+    <!-- leadership -->
+    <div class="flex flex-col mx-auto text-center">
+      <div class="justify-between space-y-4">
+        <!-- content -->
+         <div>
+          <div class="mb-2">
+            <img src="https://pab-ns.github.io/epic/images/pathway-icons/icon-leadership.png" class="mx-auto" width="100" alt="">
+          </div>
+          <h5 class="text-2xl capitalize text-epicBlue" >Leadership</h5>
+        </div>
+         
+         <!-- button -->
+          <a href="https://pab-ns.github.io/epic/academy/pathway-leadership2.html">
+          <button class="bg-green-500 hover:bg-lime-300 transition-all duration-200 text-white py-3 px-7 rounded-full items-center tracking-wider text-xxs font-bold uppercase">
+             <span>Enable Greatness</span>
+          </button>
+        </a>
+       
+       </div>  
+    </div>
+    <!-- foundations -->
+    <div class="flex flex-col mx-auto text-center">
+      <div class="justify-between space-y-4">
+        <!-- content -->
+         <div>
+          <div class="mb-2">
+            <img src="https://pab-ns.github.io/epic/images/pathway-icons/icon-foundation.png" class="mx-auto" width="100" alt="">
+          </div>
+          <h5 class="text-2xl capitalize text-epicBlue" >Foundations Essentials</h5>
+        </div>
+         
+         <!-- button -->
+          <a href="https://pab-ns.github.io/epic/academy/pathway-foundations2.html">
+          <button class="bg-violet-400 hover:bg-indigo-800 transition-all duration-200 text-white py-3 px-7 rounded-full items-center tracking-wider text-xxs font-bold uppercase">
+             <span>Learn, Lead, Succeed</span>
+          </button>
+        </a>
+       
+       </div>  
+    </div>
+    <!-- coaching -->
+    <div class="flex flex-col mx-auto text-center">
+      <div class="justify-between space-y-4">
+        <!-- content -->
+         <div>
+          <div class="mb-2">
+            <img src="https://pab-ns.github.io/epic/images/pathway-icons/icon-coaching.png" class="mx-auto" width="100" alt="">
+          </div>
+          <h5 class="text-2xl capitalize text-epicBlue" >Coaching Mastery</h5>
+        </div>
+         
+         <!-- button -->
+          <a href="https://pab-ns.github.io/epic/academy/pathway-coaching2.html">
+          <button class="bg-emerald-500 hover:bg-cyan-500 transition-all duration-200 text-white py-3 px-7 rounded-full items-center tracking-wider text-xxs font-bold uppercase">
+             <span>Dream Environments</span>
+          </button>
+        </a>
+       
+       </div>  
+    </div>                     
+  </div> 
+</section>
+
+<!-- What -->
+<section class="bg-epicShell input-full-w-section">
+  <div class="container mx-auto max-w-4xl input-mobile-padding">
+  <h2 class="input-section-title-normal text-center text-epicBlue mb-10 capitalize">What do i get?</h2>
+  <div class="grid grid-cols-1 md:grid-cols-2 md:gap-2 md:px-5">
+    <!-- what 1 -->
+    <div class="flex p-6 mx-auto text-left space-x-6">
+      <!-- emoji -->
+      <div class="text-2xl mb-5">✅</div>
+      <!-- text -->
+      <p class="text-epicBlue"><b>Seasoned practitioners</b> in thier our respective fields, offering invaluable insights, practical expertise and real-life stories.</p>
+    </div>
+    <!-- what 2 -->
+    <div class="flex p-6 mx-auto text-left space-x-6">
+      <!-- emoji -->
+      <div class="text-2xl mb-5">✅</div>
+      <!-- text -->
+      <p class="text-epicBlue"><b>We don't do slide sandwiches</b>. We focus on activities and conversations that drive learning.</p>
+    </div>
+    <!-- what 3 -->
+    <div class="flex p-6 mx-auto text-left space-x-6">
+      <!-- emoji -->
+      <div class="text-2xl mb-5">✅</div>
+      <!-- text -->
+      <p class="text-epicBlue"><b>Certified courses</b>, allowing students to move from beginner to practitioner.</p>
+    </div>
+    <!-- what 4 -->
+    <div class="flex p-6 mx-auto text-left space-x-6">
+      <!-- emoji -->
+      <div class="text-2xl mb-5">✅</div>
+      <!-- text -->
+      <p class="text-epicBlue"><b>We keep it light and fun.</b>Play is important to us. If you're not laughing, you're not learning.</p>
+    </div>
+    <!-- what 5 -->
+    <div class="flex p-6 mx-auto text-left space-x-6">
+      <!-- emoji -->
+      <div class="text-2xl mb-5">✅</div>
+      <!-- text -->
+      <p class="text-epicBlue"><b>Learning Pathways for you 
+      </b>. Straightforward, no-nonsense pathways with all the certifications.</p>
+    </div>
+    <!-- what 6 -->
+    <div class="flex p-6 mx-auto text-left space-x-6">
+      <!-- emoji -->
+      <div class="text-2xl mb-5">✅</div>
+      <!-- text -->
+      <p class="text-epicBlue">It's more important that you leave <b>confident</b> to apply what you've learned than filled with knowledge you'll never need.</p>
+    </div>                    
+</div>
+
+</div>
+</section>
+
+<!-- chart -->
+<section class="container max-w-6xl mx-auto my-20 input-mobile-padding">
+  <h2 class="input-section-title-normal text-center text-epicBlue mb-10 capitalize">Pathway Overview</h2>
+  <img src="https://pab-ns.github.io/epic/images/pathway-icons/pathway-chart-desktop.png" alt="" class="mx-auto mt-0 md:mt-14" width="100%">
+  <br>
+  <img src="https://pab-ns.github.io/epic/images/pathway-icons/pathway-chart.png" alt="" class="mx-auto mt-0 md:mt-14" width="100%">
+
+</section>
+
+<!-- Problem -->
+<section class="bg-epicShell input-full-w-section my-20">
+  <!-- tribe -->
+    <div class="container max-w-6xl mx-auto input-mobile-padding">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+        
+        <!-- LEFT: TEXT CONTENT -->
+        <div>
+          <h2 class="input-section-title text-epicBlue mb-10 capitalize">Your Certified Training Partner</h2>
+          <p class=" mb-10 text-lg">
+            Let us be your corporate training provider so your company can focus on what it does best. 
+            Or just grow skills so you can build your dream career with our certified courses. 
+          </p>
+        </div>
+        
+        <!-- RIGHT: STACKED IMAGES -->
+        <div class="grid grid-cols-2 gap-6">
+          <div class="space-y-6">
+            <img src="https://pab-ns.github.io/epic/images/Courses-Epic-Agile---Coach-Training - Copy.jpg" class="rounded-xl shadow-lg object-cover">
+            <img src="https://pab-ns.github.io/epic/images/Courses-Epic-Agile---Coach-Training - Copy.jpg" class="rounded-xl shadow-lg object-cover">
+          </div>
+          <div class="space-y-6 mt-12">
+            <img src="https://pab-ns.github.io/epic/images/Courses-Epic-Agile---Coach-Training - Copy.jpg" class="rounded-xl shadow-lg object-cover">
+            <img src="https://pab-ns.github.io/epic/images/Courses-Epic-Agile---Coach-Training - Copy.jpg" class="rounded-xl shadow-lg object-cover">
+          </div>
+        </div>
+    
+      </div>
+    </div>
+</section>
+
+<!-- video carousel testimonials -->
+<section class="container max-w-6xl mx-auto my-20 input-mobile-padding">
+  <h2 class="text-center text-epiclightBlue input-section-title-normal mb-16">Real stories, real impact</h2>
+  <div class="relative overflow-x-hidden ">
+    <!-- slider -->
+    <div class="relative flex items-center">
+        <div id="carousel" class="relative scrollbar-hide flex w-full snap-x snap-mandatory gap-8 overflow-x-auto overscroll-x-contain">
+        <!-- slider 1 -->
+        <div class="carousel-item relative flex aspect-video w-full md:w-1/2 shrink-0 snap-start flex-col justify-end overflow-hidden rounded-xl shadow-lg hover:opacity-80 transition-all duration-500">
+            <a href="https://vimeo.com/511421244" target="_blank">
+            <img src="https://pab-ns.github.io/epic/images/thumbs/thumb-mcec-pt1.jpg" alt="" class="absolute inset-0 h-full w-full object-cover" />
+            </a>
+        </div>
+        <!-- slider 2 -->
+        <div class="carousel-item relative flex aspect-video w-full md:w-1/2 shrink-0 snap-start flex-col justify-end overflow-hidden rounded-xl shadow-lg hover:opacity-80 transition-all duration-500">
+            <a href="https://vimeo.com/838881693" target="_blank">
+            <img src="https://pab-ns.github.io/epic/images/thumbs/thumb-intelematics.jpg" alt="" class="absolute inset-0 h-full w-full object-cover" />
+            </a>
+        </div>
+        <!-- slider 3 -->
+        <div class="carousel-item relative flex aspect-video w-full md:w-1/2 shrink-0 snap-start flex-col justify-end overflow-hidden rounded-xl shadow-lg hover:opacity-80 transition-all duration-500">
+            <a href="https://vimeo.com/729426651" target="_blank">
+            <img src="https://pab-ns.github.io/epic/images/thumbs/thumb-TMB.jpg" alt="" class="absolute inset-0 h-full w-full object-cover" />
+            </a>
+        </div>
+        <!-- slider 4 -->
+        <div class="carousel-item relative flex aspect-video w-full md:w-1/2 shrink-0 snap-start flex-col justify-end overflow-hidden rounded-xl shadow-lg hover:opacity-80 transition-all duration-500">
+          <a href="https://vimeo.com/659496891" target="_blank">
+          <img src="https://pab-ns.github.io/epic/images/thumbs/thumb-griffith.jpg" alt="" class="absolute inset-0 h-full w-full object-cover" />
+          </a>
+      </div>
+        <!-- slider 5 -->
+        <div class="carousel-item relative flex aspect-video w-full md:w-1/2 shrink-0 snap-start flex-col justify-end overflow-hidden rounded-xl shadow-lg hover:opacity-80 transition-all duration-500">
+          <a href="https://vimeo.com/703577120" target="_blank">
+          <img src="https://pab-ns.github.io/epic/images/thumbs/thumb-genworth.jpg" alt="" class="absolute inset-0 h-full w-full object-cover" />
+          </a>
+      </div>
+        <!-- slider 6 -->
+        <div class="carousel-item relative flex aspect-video w-full md:w-1/2 shrink-0 snap-start flex-col justify-end overflow-hidden rounded-xl shadow-lg hover:opacity-80 transition-all duration-500">
+          <a href="https://vimeo.com/1035034905" target="_blank">
+          <img src="https://pab-ns.github.io/epic/images/thumbs/thumb-zurich-maylaisia.jpg" alt="" class="absolute inset-0 h-full w-full object-cover" />
+          </a>
+      </div>                                           
+        </div>
+    </div>
+
+    <!-- arrow buttons -->
+        <div class="flex justify-center gap-x-4 mt-10">
+        <button id="prev" aria-label="Previous" class="bg-epiclightBlue hover:bg-epicBlue transition-all duration-200 inline-flex h-12 w-12 items-center justify-center rounded-full shadow-md">
+            <svg viewBox="0 0 20 20" fill="#FFF" class="h-5 w-5">
+              <path fill-rule="evenodd" d="M11.78 5.22a.75.75 0 0 1 0 1.06L8.06 10l3.72 3.72a.75.75 0 1 1-1.06 1.06l-4.25-4.25a.75.75 0 0 1 0-1.06l4.25-4.25a.75.75 0 0 1 1.06 0Z" clip-rule="evenodd" />
+            </svg>
+        </button>       
+
+        <button id="next" aria-label="Next" class="bg-epiclightBlue hover:bg-epicBlue transition-all duration-200 inline-flex h-12 w-12 items-center justify-center rounded-full shadow-md">
+            <svg viewBox="0 0 20 20" fill="#FFF" class="h-5 w-5">
+            <path fill-rule="evenodd" d="M8.22 5.22a.75.75 0 0 1 1.06 0l4.25 4.25a.75.75 0 0 1 0 1.06l-4.25 4.25a.75.75 0 0 1-1.06-1.06L11.94 10 8.22 6.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
+            </svg>
+        </button>
+        </div>
+</div>  
+
+
+
+</section>
+
+<!-- footer placeholder -->
+<footer class="py-10 bg-epicBlue">
+  <div class="container px-8 mt-5 flex flex-col items-center justify-around mx-auto space-y-16 md:flex-row md:space-y-0 md:items-start">
+
+    <div class="flex flex-col items-center md:items-start">
+     <!-- logo -->
+      
+     <a href="https://pab-ns.github.io/epic/">
+     <img src="https://pab-ns.github.io/epic/images/epic-innovation.png" alt="" width="150" class="mb-4">
+     <span class="font-rocksalt text-white text-xl uppercase">Innovation</span>
+     </a>
+    
+     <!-- social -->
+     <div class="flex flex-col items-baseline justify-evenly mt-8">
+      <!-- socials -->
+         <div class="flex space-x-6 ">
+            <!-- linkedin -->
+              <a href="https://www.linkedin.com/company/epic-agile/" target="_blank">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 71 71"
+  fill="none" class="fill-epicCustard hover:fill-epicYellow">
+  <path
+    d="M24.7612 55.999V28.3354H15.5433V55.999H24.7621H24.7612ZM20.1542 24.5591C23.3679 24.5591 25.3687 22.4348 25.3687 19.7801C25.3086 17.065 23.3679 15 20.2153 15C17.0605 15 15 17.065 15 19.7799C15 22.4346 17.0001 24.5588 20.0938 24.5588H20.1534L20.1542 24.5591ZM29.8633 55.999H39.0805V40.5521C39.0805 39.7264 39.1406 38.8985 39.3841 38.3088C40.0502 36.6562 41.5668 34.9455 44.1138 34.9455C47.4484 34.9455 48.7831 37.4821 48.7831 41.2014V55.999H58V40.1376C58 31.6408 53.4532 27.6869 47.3887 27.6869C42.4167 27.6869 40.233 30.4589 39.0198 32.347H39.0812V28.3364H29.8638C29.9841 30.9316 29.8631 56 29.8631 56L29.8633 55.999Z"/>
+  </svg>
+              </a>
+            <!-- fb -->
+            <a href="https://www.facebook.com/EPiCAgile/" target="_blank">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 71 71"
+  fill="none" class="fill-epicCustard hover:fill-epicYellow">
+  <path d="M46.4233 38.6403L47.7279 30.3588H39.6917V24.9759C39.6917 22.7114 40.8137 20.4987 44.4013 20.4987H48.1063V13.4465C45.9486 13.1028 43.7685 12.9168 41.5834 12.8901C34.9692 12.8901 30.651 16.8626 30.651 24.0442V30.3588H23.3193V38.6403H30.651V58.671H39.6917V38.6403H46.4233Z"/>
+  </svg>
+            </a>
+            <!-- X -->
+            <a href="https://x.com/epicagile" target="_blank">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 71 71"
+  fill="none" class="fill-epicCustard hover:fill-epicYellow">
+  <path d="M40.7568 32.1716L59.3704 11H54.9596L38.7974 29.383L25.8887 11H11L30.5205 38.7983L11 61H15.4111L32.4788 41.5869L46.1113 61H61L40.7557 32.1716H40.7568ZM34.7152 39.0433L32.7374 36.2752L17.0005 14.2492H23.7756L36.4755 32.0249L38.4533 34.7929L54.9617 57.8986H48.1865L34.7152 39.0443V39.0433Z" />
+  </svg>
+            </a>   
+            <!-- ig -->
+            <a href="https://www.instagram.com/epicagile/" target="_blank">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 71 71"
+  fill="none" class="fill-epicCustard hover:fill-epicYellow">
+  <path
+    d="M27.3762 35.7808C27.3762 31.1786 31.1083 27.4468 35.7132 27.4468C40.3182 27.4468 44.0522 31.1786 44.0522 35.7808C44.0522 40.383 40.3182 44.1148 35.7132 44.1148C31.1083 44.1148 27.3762 40.383 27.3762 35.7808ZM22.8683 35.7808C22.8683 42.8708 28.619 48.618 35.7132 48.618C42.8075 48.618 48.5581 42.8708 48.5581 35.7808C48.5581 28.6908 42.8075 22.9436 35.7132 22.9436C28.619 22.9436 22.8683 28.6908 22.8683 35.7808ZM46.0648 22.4346C46.0646 23.0279 46.2404 23.608 46.5701 24.1015C46.8997 24.595 47.3684 24.9797 47.9168 25.2069C48.4652 25.4342 49.0688 25.4939 49.6511 25.3784C50.2334 25.2628 50.7684 24.9773 51.1884 24.5579C51.6084 24.1385 51.8945 23.6041 52.0105 23.0222C52.1266 22.4403 52.0674 21.8371 51.8404 21.2888C51.6134 20.7406 51.2289 20.2719 50.7354 19.942C50.2418 19.6122 49.6615 19.436 49.0679 19.4358H49.0667C48.2708 19.4361 47.5077 19.7522 46.9449 20.3144C46.3821 20.8767 46.0655 21.6392 46.0648 22.4346ZM25.6072 56.1302C23.1683 56.0192 21.8427 55.6132 20.9618 55.2702C19.7939 54.8158 18.9606 54.2746 18.0845 53.4002C17.2083 52.5258 16.666 51.6938 16.2133 50.5266C15.8699 49.6466 15.4637 48.3214 15.3528 45.884C15.2316 43.2488 15.2073 42.4572 15.2073 35.781C15.2073 29.1048 15.2336 28.3154 15.3528 25.678C15.4639 23.2406 15.8731 21.918 16.2133 21.0354C16.668 19.8682 17.2095 19.0354 18.0845 18.1598C18.9594 17.2842 19.7919 16.7422 20.9618 16.2898C21.8423 15.9466 23.1683 15.5406 25.6072 15.4298C28.244 15.3086 29.036 15.2844 35.7132 15.2844C42.3904 15.2844 43.1833 15.3106 45.8223 15.4298C48.2612 15.5408 49.5846 15.9498 50.4677 16.2898C51.6356 16.7422 52.4689 17.2854 53.345 18.1598C54.2211 19.0342 54.7615 19.8682 55.2161 21.0354C55.5595 21.9154 55.9658 23.2406 56.0767 25.678C56.1979 28.3154 56.2221 29.1048 56.2221 35.781C56.2221 42.4572 56.1979 43.2466 56.0767 45.884C55.9656 48.3214 55.5573 49.6462 55.2161 50.5266C54.7615 51.6938 54.2199 52.5266 53.345 53.4002C52.4701 54.2738 51.6356 54.8158 50.4677 55.2702C49.5872 55.6134 48.2612 56.0194 45.8223 56.1302C43.1855 56.2514 42.3934 56.2756 35.7132 56.2756C29.033 56.2756 28.2432 56.2514 25.6072 56.1302ZM25.4001 10.9322C22.7371 11.0534 20.9174 11.4754 19.3282 12.0934C17.6824 12.7316 16.2892 13.5878 14.897 14.977C13.5047 16.3662 12.6502 17.7608 12.0116 19.4056C11.3933 20.9948 10.971 22.8124 10.8497 25.4738C10.7265 28.1394 10.6982 28.9916 10.6982 35.7808C10.6982 42.57 10.7265 43.4222 10.8497 46.0878C10.971 48.7494 11.3933 50.5668 12.0116 52.156C12.6502 53.7998 13.5049 55.196 14.897 56.5846C16.289 57.9732 17.6824 58.8282 19.3282 59.4682C20.9204 60.0862 22.7371 60.5082 25.4001 60.6294C28.0687 60.7506 28.92 60.7808 35.7132 60.7808C42.5065 60.7808 43.3592 60.7526 46.0264 60.6294C48.6896 60.5082 50.5081 60.0862 52.0983 59.4682C53.7431 58.8282 55.1373 57.9738 56.5295 56.5846C57.9218 55.1954 58.7745 53.7998 59.4149 52.156C60.0332 50.5668 60.4575 48.7492 60.5768 46.0878C60.698 43.4202 60.7262 42.57 60.7262 35.7808C60.7262 28.9916 60.698 28.1394 60.5768 25.4738C60.4555 22.8122 60.0332 20.9938 59.4149 19.4056C58.7745 17.7618 57.9196 16.3684 56.5295 14.977C55.1395 13.5856 53.7431 12.7316 52.1003 12.0934C50.5081 11.4754 48.6894 11.0514 46.0284 10.9322C43.3612 10.811 42.5085 10.7808 35.7152 10.7808C28.922 10.7808 28.0687 10.809 25.4001 10.9322Z"/>
+  </svg>
+            </a>   
+            <!-- yt -->
+            <a href="https://www.youtube.com/@EpicAgile" target="_blank">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 71 71"
+  fill="none" class="fill-epicCustard hover:fill-epicYellow">
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M56.5615 18.2428C58.8115 18.8504 60.58 20.6234 61.1778 22.8708C62.2654 26.9495 62.2654 35.4647 62.2654 35.4647C62.2654 35.4647 62.2654 43.98 61.1778 48.0586C60.5717 50.3144 58.8032 52.0873 56.5615 52.6866C52.4932 53.7771 36.1703 53.7771 36.1703 53.7771C36.1703 53.7771 19.8557 53.7771 15.7791 52.6866C13.5291 52.079 11.7606 50.306 11.1628 48.0586C10.0752 43.98 10.0752 35.4647 10.0752 35.4647C10.0752 35.4647 10.0752 26.9495 11.1628 22.8708C11.7689 20.615 13.5374 18.8421 15.7791 18.2428C19.8557 17.1523 36.1703 17.1523 36.1703 17.1523C36.1703 17.1523 52.4932 17.1523 56.5615 18.2428ZM44.5142 35.4647L30.9561 43.314V27.6154L44.5142 35.4647Z"/>
+  </svg></a>
+          </div>
+   </div>
+    </div>
+
+      <!-- menus container -->
+       <div class="grid gap-2 gap-y-10 md:gap-y-0 grid-cols-2 md:grid-cols-4">
+        
+        <!-- menu 1 -->
+        <div class="flex flex-col w-full items-start">
+           <div class="mb-5 text-white font-bold capitalize">What we do</div>
+           <div class="flex flex-col items-start space-y-3 capitalize text-xs md:text-sm">
+              <a href="https://pab-ns.github.io/epic/academy/" class="text-epicCustard hover:text-epicYellow transition-all duration-100">EPiC Academy</a>               
+              <a href="https://pab-ns.github.io/epic/masterclasses/" class="text-epicCustard hover:text-epicYellow transition-all duration-100">Masterclasses</a>
+              <a href="" class="text-epicCustard hover:text-epicYellow transition-all duration-100 opacity-15">Accelerators</a>  
+              <a href="" class="text-epicCustard hover:text-epicYellow transition-all duration-100 opacity-15">Ways of Working</a>
+                                     
+           </div>
+        </div>
+        <!-- menu 2 -->
+        <div class="flex flex-col w-full items-start ">
+          <div class="mb-5 text-white font-bold capitalize">About Us</div>
+          <div class="flex flex-col items-start space-y-3 capitalize text-xs md:text-sm">
+             <a href="#" class="text-epicCustard hover:text-epicYellow transition-all duration-100 opacity-15">What we've done</a>
+             <a href="https://pab-ns.github.io/epic/why1.html" class="text-epicCustard hover:text-epicYellow transition-all duration-100">why we do it</a>  
+             <a href="https://pab-ns.github.io/epic/who1.html" class="text-epicCustard hover:text-epicYellow transition-all duration-100">Who we are</a>
+          </div>
+      </div>  
+        <!-- menu 3 -->
+        <div class="flex flex-col w-full items-start ">
+          <div class="mb-5 text-white font-bold capitalize">Training</div>
+          <div class="flex flex-col items-start space-y-3 capitalize text-xs md:text-sm">
+             <a href="https://training.epicagile.com.au/w/au/upcoming/" target="_blank" class="capitalize text-epicCustard hover:text-epicYellow transition-all duration-100">Certified training</a>
+          </div>
+       </div>
+        <!-- menu 4 -->
+        <div class="flex flex-col w-full items-start">
+          <div class="mb-5 text-white font-bold capitalize">Contact Us</div>
+          <div class="flex flex-col items-start space-y-3 capitalize text-xs md:text-sm text-white">
+            <p>Australia: <a href="tel:1300 550 887" class="text-epicCustard hover:text-epicYellow transition-all duration-100">1300 550 887</a> <br>
+              International: <a href="tel:+61 238 213 624" class="text-epicCustard hover:text-epicYellow transition-all duration-100">+61 238 213 624</a>
+            </p>
+            <p><a href="mailto:empowerme@epicagile.com.au" class="text-epicCustard hover:text-epicYellow transition-all duration-100 lowercase">empowerme@epicagile.com.au</a></p>
+          </div>
+       </div>                                                                                            
+        
+      </div>
+  </div>
+  <hr class="container mx-auto my-10 opacity-10 w-1/2">
+  <div class="flex flex-col space-y-2 items-center justify-center">
+    <span class="text-white text-xs">© 2025 EPiC Consulting Services Pty Ltd</span>
+    <a href="https://pab-ns.github.io/epic/privacy.html"><span class="text-gray-300 hover:text-white transition-all duration-200 text-xxs">Privacy Policy</span></a>
+  </div>
+</footer>  
+
+  
+</body>
+</html>
