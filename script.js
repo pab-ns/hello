@@ -12,7 +12,7 @@
         const projectElement = document.createElement("a");
         projectElement.href = project.href;
         projectElement.target = "_blank";
-        projectElement.className = "hover:border-[0.1rem] border-neutral-400 rounded-xl duration-300";
+        projectElement.className = "hover:border-[0.1rem] border-neutral-400 rounded-xl duration-700";
         projectElement.id = `work${index + 1}`; // Unique ID
         projectElement.innerHTML = `
           <img src="${project.img}" alt="${project.name}" class="w-auto rounded-xl shadow-md">
